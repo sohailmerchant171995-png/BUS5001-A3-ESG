@@ -1,6 +1,6 @@
 # BUS5001 Assessment 3: Robotic Process Automation, AI and Cloud-Enabled ESG Analytics
 
-**Author:** Sohail Merchant (22383148), Master of Business Analytics, La Trobe University
+**Author:** Sohail Merchant (22383148), Master of Business Analytics, La Trobe University  
 **Subject:** BUS5001 Cloud Platforms and Analytics, Semester 2 2026
 
 This repository holds the implementation evidence and experiment logs that support the written report.

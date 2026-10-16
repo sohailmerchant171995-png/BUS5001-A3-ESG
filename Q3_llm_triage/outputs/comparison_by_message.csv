@@ -1,0 +1,11 @@
+id,gold_category,rule_category,zs_category,v1_original_category,v2_improved_category,gold_urgency,rule_urgency,zs_urgency,v1_original_urgency,v2_improved_urgency
+M1,water_leak,water_leak,water_leak,Environmental / Facilities,water_leak,HIGH,HIGH,HIGH,HIGH,MEDIUM
+M2,waste_contamination,waste_contamination,waste_contamination,Waste Management,waste_contamination,MEDIUM,HIGH,HIGH,LOW,MEDIUM
+M3,energy_waste,energy_waste,energy_waste,Energy Efficiency,energy_waste,MEDIUM,HIGH,LOW,LOW,MEDIUM
+M4,procurement_compliance,procurement_compliance,procurement_compliance,Supply Chain Sustainability,procurement_compliance,MEDIUM,MEDIUM,HIGH,MEDIUM,HIGH
+M5,accessibility_barrier,accessibility_barrier,accessibility_barrier,Accessibility / Facilities,accessibility_barrier,HIGH,HIGH,HIGH,HIGH,HIGH
+M6,safety_hazard,safety_hazard,safety_hazard,Environmental / Hazardous Materials,safety_hazard,CRITICAL,CRITICAL,HIGH,CRITICAL,CRITICAL
+M7,general_feedback,general_feedback,general_feedback,Positive Feedback / Facilities,general_feedback,LOW,LOW,LOW,LOW,LOW
+M8,governance_misconduct,governance_misconduct,governance_misconduct,Data Integrity / Fraud,governance_misconduct,HIGH,HIGH,HIGH,CRITICAL,HIGH
+M9,energy_waste,energy_waste,waste_contamination,Energy Efficiency,energy_waste,MEDIUM,MEDIUM,MEDIUM,LOW,MEDIUM
+M10,safety_hazard,safety_hazard,safety_hazard,Safety & Infrastructure,safety_hazard,CRITICAL,CRITICAL,LOW,CRITICAL,CRITICAL

@@ -1,0 +1,10 @@
+{
+  "run_date": "2026-10-16T09:42:11",
+  "model": "gemini-3.5-flash-lite",
+  "temperature": 0,
+  "repeats": 3,
+  "zero_shot_model": "facebook/bart-large-mnli",
+  "python": "3.13.16",
+  "n_messages": 10,
+  "note": "All messages simulated; PII is fake and used only to test redaction."
+}

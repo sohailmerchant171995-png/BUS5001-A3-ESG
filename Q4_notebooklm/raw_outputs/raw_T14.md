@@ -1,0 +1,5 @@
+# T14 Reproducibility — T2 re-asked after "Delete chat history" — 22:47 AEDT
+OUTPUT (summary): same two cumulative conditions; same entity list; same exclusions (+ "entities incorporated in a foreign jurisdiction"); this time a TABLE (cohort / commencement / thresholds) instead of bullets; same dates & thresholds for Groups 1–3; Group 3 no-material-risk statement s296B(1); NEW: note that thresholds crystallise at financial year-end (monitoring systems needed).
+COMPARISON with T2: all facts identical (dates, $500m/$1bn/500; $200m/$500m/250; $50m/$25m/100; $5bn asset owners; NGER pathways; exclusions). Differences only in layout (table vs bullets), citation numbering, and one added practical point. Copied text again contains raw LaTeX "$\ge$" and HTML "<br>" tags.
+RESULT: factually consistent across sessions (100% of key facts match); presentation varies -> fine for learning, but outputs are not byte-identical, so students citing 'what NotebookLM said' cannot assume reproducibility.
+SCORE: consistency of facts 2/2; consistency of form partial.

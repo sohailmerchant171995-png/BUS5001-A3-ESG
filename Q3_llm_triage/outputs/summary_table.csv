@@ -1,0 +1,5 @@
+Method,Category accuracy %,Urgency accuracy %,Same answer in all 3 repeats %,Valid JSON as returned %
+Rule-based keywords,100,80,100 (deterministic),100 (no free text)
+Zero-shot BART-MNLI,90,50,100 (deterministic),100 (no free text)
+LLM + prompt v1,0,60,0,77
+LLM + prompt v2,100,80,100,100

@@ -1,0 +1,932 @@
+run_date,model,prompt,repeat,id,json_valid_as_returned,n_issues,category,urgency,followup,team,sensitivity,raw
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M1,False,1,Environmental / Facilities Management,HIGH,Y,Facilities Maintenance,LOW,"```json
+{
+  ""issues"": [
+    {
+      ""issue_category"": ""Environmental / Facilities Management"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities Maintenance"",
+      ""escalation_reason"": ""Active water leak causing resource waste and potential property damage."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""brief_summary"": ""Unresolved water leak reported in Building C running all morning.""
+    }
+  ]
+}
+```"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M1,True,1,Environmental / Facilities,HIGH,Y,Facilities Management,LOW,"{
+  ""issue_category"": ""Environmental / Facilities"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities Management"",
+  ""escalation_reason"": ""Active water leak causing resource waste and potential property damage if left unaddressed."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""A continuous water leak has been reported in Building C and has been running all morning.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M1,True,1,Facilities Management / Environmental,HIGH,Y,Facilities/Maintenance,LOW,"[
+  {
+    ""issue_category"": ""Facilities Management / Environmental"",
+    ""urgency"": ""HIGH"",
+    ""sentiment"": ""NEGATIVE"",
+    ""followup_required"": ""Y"",
+    ""recommended_team"": ""Facilities/Maintenance"",
+    ""escalation_reason"": ""Continuous water leak causing resource waste and potential property damage if left unaddressed."",
+    ""data_sensitivity_risk"": ""LOW"",
+    ""brief_summary"": ""An unresolved water leak has been running all morning in Building C.""
+  }
+]"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M2,True,1,Waste Management,MEDIUM,Y,Facilities Management,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""Waste Management"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities Management"",
+      ""escalation_reason"": ""Recurring contamination of recycling bins indicates a breakdown in operational oversight and sorting protocols."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""brief_summary"": ""Recycling bins are repeatedly contaminated and lack proper monitoring.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M2,True,1,Waste Management,LOW,Y,Facilities Management,LOW,"{
+  ""issue_category"": ""Waste Management"",
+  ""urgency"": ""LOW"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities Management"",
+  ""escalation_reason"": ""Recurring contamination of recycling bins indicates a need for monitoring and employee communication."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""Recycling bins are repeatedly contaminated and lack oversight.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M2,True,1,Waste Management,LOW,Y,Facilities Management,LOW,"[
+  {
+    ""issue_category"": ""Waste Management"",
+    ""urgency"": ""LOW"",
+    ""sentiment"": ""NEGATIVE"",
+    ""followup_required"": ""Y"",
+    ""recommended_team"": ""Facilities Management"",
+    ""escalation_reason"": ""Repeated contamination of recycling bins indicates a breakdown in waste sorting protocols or monitoring."",
+    ""data_sensitivity_risk"": ""LOW"",
+    ""brief_summary"": ""Recycling bins are continually contaminated due to a lack of monitoring.""
+  }
+]"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M3,True,1,Energy Efficiency,LOW,Y,Facilities Management,LOW,"{
+  ""issue_category"": ""Energy Efficiency"",
+  ""urgency"": ""LOW"",
+  ""sentiment"": ""NEUTRAL"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities Management"",
+  ""escalation_reason"": ""Unnecessary energy consumption and utility cost waste outside of business hours."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""Air conditioning is left running overnight in an unoccupied office, resulting in energy waste.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M3,True,1,Energy Efficiency / Operational Waste,LOW,Y,Facilities Management,LOW,"[
+  {
+    ""issue_category"": ""Energy Efficiency / Operational Waste"",
+    ""urgency"": ""LOW"",
+    ""sentiment"": ""NEUTRAL"",
+    ""followup_required"": ""Y"",
+    ""recommended_team"": ""Facilities Management"",
+    ""escalation_reason"": ""Unnecessary energy consumption and electricity waste outside of office hours."",
+    ""data_sensitivity_risk"": ""LOW"",
+    ""brief_summary"": ""Air conditioning is left running overnight in an unoccupied office.""
+  }
+]"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M3,True,1,Energy Efficiency / Waste,LOW,Y,Facilities Management,LOW,"[
+  {
+    ""issue_category"": ""Energy Efficiency / Waste"",
+    ""urgency"": ""LOW"",
+    ""sentiment"": ""NEUTRAL"",
+    ""followup_required"": ""Y"",
+    ""recommended_team"": ""Facilities Management"",
+    ""escalation_reason"": ""Continuous energy waste from running HVAC in an unoccupied space outside business hours."",
+    ""data_sensitivity_risk"": ""LOW"",
+    ""brief_summary"": ""Air conditioning is left running overnight in an empty office, causing unnecessary energy consumption.""
+  }
+]"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M4,True,1,Supply Chain Sustainability,MEDIUM,Y,Procurement / ESG Compliance,LOW,"{
+  ""issue_category"": ""Supply Chain Sustainability"",
+  ""urgency"": ""MEDIUM"",
+  ""sentiment"": ""NEUTRAL"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Procurement / ESG Compliance"",
+  ""escalation_reason"": ""Potential violation of company sustainability policy by a supplier requires investigation."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""Employee reported a potential breach of the company's sustainability policy by one of the suppliers.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M4,False,1,Supplier Sustainability Compliance,MEDIUM,Y,Procurement / ESG Compliance,LOW,"```json
+{
+  ""issue_category"": ""Supplier Sustainability Compliance"",
+  ""urgency"": ""MEDIUM"",
+  ""sentiment"": ""NEUTRAL"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Procurement / ESG Compliance"",
+  ""escalation_reason"": ""Potential breach of company sustainability policy by a supplier requires investigation."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""An employee reported potential non-compliance with the company's sustainability policy by a supplier.""
+}
+```"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M4,True,1,Supply Chain Sustainability,MEDIUM,Y,Procurement / ESG Compliance,LOW,"{
+  ""issue_category"": ""Supply Chain Sustainability"",
+  ""urgency"": ""MEDIUM"",
+  ""sentiment"": ""NEUTRAL"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Procurement / ESG Compliance"",
+  ""escalation_reason"": ""Potential violation of company sustainability policy by a supplier requires investigation."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""Employee reported a potential breach of the company's sustainability policy by one of its suppliers.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M5,True,1,Accessibility / Facilities,HIGH,Y,Facilities Management,LOW,"{
+  ""issue_category"": ""Accessibility / Facilities"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities Management"",
+  ""escalation_reason"": ""Blocked accessible entrance for two days violates accessibility standards and poses an immediate safety and compliance risk."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""The accessible entrance near the main building has been blocked for two days.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M5,True,1,Accessibility / Facilities,HIGH,Y,Facilities Management,LOW,"{
+  ""issue_category"": ""Accessibility / Facilities"",
+  ""urgency"": ""HIGH"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities Management"",
+  ""escalation_reason"": ""Blocked accessible entrance for two days violates accessibility standards and poses an operational/safety risk."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""The accessible entrance near the main building has been blocked for two days.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M5,True,1,Accessibility,HIGH,Y,Facilities Management,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""Accessibility"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities Management"",
+      ""escalation_reason"": ""Blocked accessible entrance impacts safety, ADA compliance, and employee/visitor access for two consecutive days."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""brief_summary"": ""The accessible entrance near the main building has been blocked for two days.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M6,False,1,Environmental/Safety Hazard,CRITICAL,Y,Environmental Health and Safety (EHS),Low,"```json
+{
+  ""issues"": [
+    {
+      ""issue_category"": ""Environmental/Safety Hazard"",
+      ""urgency"": ""CRITICAL"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Environmental Health and Safety (EHS)"",
+      ""escalation_reason"": ""Hazardous chemical leak with personnel experiencing physical symptoms (dizziness), posing immediate health, safety, and environmental risks."",
+      ""data_sensitivity_risk"": ""Low"",
+      ""brief_summary"": ""Chemical leak and strong odor from drums behind Building D resulting in two employees feeling dizzy.""
+    }
+  ]
+}
+```"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M6,False,1,Environmental/Safety Incident,CRITICAL,Y,Environmental Health and Safety (EHS),None,"```json
+{
+  ""issues"": [
+    {
+      ""issue_category"": ""Environmental/Safety Incident"",
+      ""urgency"": ""CRITICAL"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Environmental Health and Safety (EHS)"",
+      ""escalation_reason"": ""Hazardous chemical leak with immediate human health impacts (dizziness reported)."",
+      ""data_sensitivity_risk"": ""None"",
+      ""brief_summary"": ""Chemical leak and strong odor from drums behind Building D causing dizziness in two individuals.""
+    }
+  ]
+}
+```"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M6,True,1,Environmental / Hazardous Materials,CRITICAL,Y,Environmental Health and Safety (EHS),LOW,"{
+  ""issue_category"": ""Environmental / Hazardous Materials"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Environmental Health and Safety (EHS)"",
+  ""escalation_reason"": ""Active chemical leak with immediate health impacts (dizziness reported by personnel) requiring emergency response."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""Chemical leak and strong odor reported behind Building D, causing dizziness in two individuals.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M7,False,1,Sustainability / Renewable Energy,LOW,N,Facilities / ESG Team,LOW,"```json
+{
+  ""issues"": [
+    {
+      ""issue_category"": ""Sustainability / Renewable Energy"",
+      ""urgency"": ""LOW"",
+      ""sentiment"": ""POSITIVE"",
+      ""followup_required"": ""N"",
+      ""recommended_team"": ""Facilities / ESG Team"",
+      ""escalation_reason"": ""None"",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""brief_summary"": ""Employee expressed positive feedback regarding the newly installed solar panels on the library.""
+    }
+  ]
+}
+```"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M7,True,1,Positive Feedback / Sustainability,LOW,N,Facilities / Communications,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""Positive Feedback / Sustainability"",
+      ""urgency"": ""LOW"",
+      ""sentiment"": ""POSITIVE"",
+      ""followup_required"": ""N"",
+      ""recommended_team"": ""Facilities / Communications"",
+      ""escalation_reason"": ""N/A"",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""brief_summary"": ""Employee expressed appreciation for the newly installed solar panels on the library.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M7,True,1,Positive Feedback / Facilities,LOW,N,Facilities / Communications,LOW,"{
+  ""issue_category"": ""Positive Feedback / Facilities"",
+  ""urgency"": ""LOW"",
+  ""sentiment"": ""POSITIVE"",
+  ""followup_required"": ""N"",
+  ""recommended_team"": ""Facilities / Communications"",
+  ""escalation_reason"": ""None required as this is positive feedback."",
+  ""data_sensitivity_risk"": ""LOW"",
+  ""brief_summary"": ""An employee expressed appreciation for the newly installed solar panels on the library.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M8,True,1,Ethics & Compliance / Falsification of Data,CRITICAL,Y,Legal / Compliance / Internal Audit,HIGH,"[
+  {
+    ""issue_category"": ""Ethics & Compliance / Falsification of Data"",
+    ""urgency"": ""CRITICAL"",
+    ""sentiment"": ""NEGATIVE"",
+    ""followup_required"": ""Y"",
+    ""recommended_team"": ""Legal / Compliance / Internal Audit"",
+    ""escalation_reason"": ""Allegation of management pressuring an employee to falsify emissions data ahead of an audit, which poses severe legal, regulatory, and reputational risks."",
+    ""data_sensitivity_risk"": ""HIGH"",
+    ""brief_summary"": ""An employee reported that their manager, John Smith, is pressuring them to alter emissions data prior to an audit and requested a phone call at 0412 345 678.""
+  }
+]"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M8,True,1,Governance/Ethics/Compliance,CRITICAL,Y,Legal/Compliance/HR,HIGH,"{
+  ""issue_category"": ""Governance/Ethics/Compliance"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Legal/Compliance/HR"",
+  ""escalation_reason"": ""Potential fraudulent falsification of audit data (emissions numbers) by a manager."",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""brief_summary"": ""An employee reports that their manager, John Smith, is pressuring them to falsify emissions data prior to an audit, and has requested a phone call at 0412 345 678.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M8,True,1,Data Integrity / Fraud,CRITICAL,Y,Compliance & Ethics / Internal Audit,HIGH,"{
+  ""issue_category"": ""Data Integrity / Fraud"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Compliance & Ethics / Internal Audit"",
+  ""escalation_reason"": ""Direct pressure from management to falsify environmental emissions data prior to an audit, representing a severe legal, ethical, and regulatory risk."",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""brief_summary"": ""An employee reports that their manager, John Smith, is pressuring them to alter emissions data before an upcoming audit.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M9,False,2,Energy Efficiency,LOW,Y,Facilities Management,LOW,"```json
+{
+  ""issues"": [
+    {
+      ""issue_category"": ""Energy Efficiency"",
+      ""urgency"": ""LOW"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities Management"",
+      ""escalation_reason"": ""Continuous unnecessary energy consumption in Building A."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""brief_summary"": ""Lights remain on nightly in Building A.""
+    },
+    {
+      ""issue_category"": ""Waste Management"",
+      ""urgency"": ""LOW"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities Management"",
+      ""escalation_reason"": ""Overflowing bins near the cafe pose hygiene and pest risks."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""brief_summary"": ""Bins near the cafe are overflowing.""
+    }
+  ]
+}
+```"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M9,False,1,Energy Waste,LOW,Y,Facilities Management,LOW,"```json
+[
+  {
+    ""issue_category"": ""Energy Waste"",
+    ""urgency"": ""LOW"",
+    ""sentiment"": ""NEGATIVE"",
+    ""followup_required"": ""Y"",
+    ""recommended_team"": ""Facilities Management"",
+    ""escalation_reason"": ""Continuous energy waste and potential waste management issues require operational intervention."",
+    ""data_sensitivity_risk"": ""LOW"",
+    ""brief_summary"": ""Lights remain on nightly in Building A and cafe bins are overflowing.""
+  }
+]
+```"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M9,True,2,Energy Efficiency,LOW,Y,Facilities Management,Low,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""Energy Efficiency"",
+      ""urgency"": ""LOW"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities Management"",
+      ""escalation_reason"": ""Unnecessary energy consumption and potential cost waste."",
+      ""data_sensitivity_risk"": ""Low"",
+      ""brief_summary"": ""Lights are left on nightly in Building A.""
+    },
+    {
+      ""issue_category"": ""Waste Management"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities Management"",
+      ""escalation_reason"": ""Overflowing bins pose hygiene and pest risks near the cafe."",
+      ""data_sensitivity_risk"": ""Low"",
+      ""brief_summary"": ""Bins near the cafe are overflowing.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,1,M10,True,1,Safety/Facility Emergency,CRITICAL,Y,Facilities/Emergency Response,HIGH,"{
+  ""issue_category"": ""Safety/Facility Emergency"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEUTRAL"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities/Emergency Response"",
+  ""escalation_reason"": ""Active smoke detected in server room, indicating potential fire hazard and critical infrastructure risk."",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""brief_summary"": ""Smoke reported coming from the server room in Building B.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,2,M10,True,1,Safety & Infrastructure,CRITICAL,Y,Facilities/Emergency Response,HIGH,"{
+  ""issue_category"": ""Safety & Infrastructure"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facilities/Emergency Response"",
+  ""escalation_reason"": ""Active smoke detected in the server room, posing an immediate fire and operational safety hazard."",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""brief_summary"": ""Smoke is coming from the server room in Building B, requiring immediate emergency intervention.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v1_original,3,M10,True,1,Safety / Infrastructure,CRITICAL,Y,Facility Management / Emergency Response,HIGH,"{
+  ""issue_category"": ""Safety / Infrastructure"",
+  ""urgency"": ""CRITICAL"",
+  ""sentiment"": ""NEGATIVE"",
+  ""followup_required"": ""Y"",
+  ""recommended_team"": ""Facility Management / Emergency Response"",
+  ""escalation_reason"": ""Active smoke emission in the server room indicates an immediate fire hazard and critical infrastructure risk."",
+  ""data_sensitivity_risk"": ""HIGH"",
+  ""brief_summary"": ""Smoke is reported coming from the server room in Building B, posing an immediate physical and operational hazard.""
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M1,True,1,water_leak,MEDIUM,Y,Facilities - Plumbing,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""water_leak"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Plumbing"",
+      ""escalation_reason"": ""Water leak running all morning needs to be addressed soon."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""There is a water leak in Building C"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Water leak running all morning in Building C.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M1,True,1,water_leak,MEDIUM,Y,Facilities - Plumbing,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""water_leak"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Plumbing"",
+      ""escalation_reason"": ""Ongoing water leak needs repair to prevent damage."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""There is a water leak in Building C that has been running all morning."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Water leak running all morning in Building C.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M1,True,1,water_leak,MEDIUM,Y,Facilities - Plumbing,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""water_leak"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Plumbing"",
+      ""escalation_reason"": ""Water leak running all morning requiring prompt maintenance."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""water leak in Building C"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Water leak running all morning in Building C.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M2,True,1,waste_contamination,MEDIUM,Y,Waste & Recycling,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""waste_contamination"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Waste & Recycling"",
+      ""escalation_reason"": ""Recycling bins are consistently contaminated and unmonitored."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""The recycling bins are contaminated again"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Recycling bins are contaminated and unmonitored.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M2,True,1,waste_contamination,MEDIUM,Y,Waste & Recycling,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""waste_contamination"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Waste & Recycling"",
+      ""escalation_reason"": ""Recycling bins are consistently contaminated and unchecked."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""The recycling bins are contaminated again and no one seems to be checking them."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Recycling bins are contaminated and unchecked.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M2,True,1,waste_contamination,MEDIUM,Y,Waste & Recycling,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""waste_contamination"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Waste & Recycling"",
+      ""escalation_reason"": ""Recycling bins are consistently contaminated and unmonitored."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""The recycling bins are contaminated again and no one seems to be checking them."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Recycling bins are contaminated and not being checked.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M3,True,1,energy_waste,MEDIUM,Y,Facilities - Energy/BMS,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""energy_waste"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Energy/BMS"",
+      ""escalation_reason"": ""Air conditioning running overnight in an empty office."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""The air conditioning is running overnight in an empty office."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Air conditioning left running overnight in an empty office.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M3,True,1,energy_waste,MEDIUM,Y,Facilities - Energy/BMS,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""energy_waste"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Energy/BMS"",
+      ""escalation_reason"": ""Energy waste occurring outside operating hours."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""The air conditioning is running overnight in an empty office."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Air conditioning running overnight in empty office.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M3,True,1,energy_waste,MEDIUM,Y,Facilities - Energy/BMS,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""energy_waste"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Energy/BMS"",
+      ""escalation_reason"": ""Air conditioning running overnight in an empty office causes ongoing energy waste."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""The air conditioning is running overnight in an empty office."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Air conditioning left running overnight in an empty office.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M4,True,1,procurement_compliance,HIGH,Y,Procurement,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""procurement_compliance"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Procurement"",
+      ""escalation_reason"": ""Potential breach of sustainability policy by a supplier."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""one of our suppliers may not meet our sustainability policy"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Supplier may not meet sustainability policy.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M4,True,1,procurement_compliance,HIGH,Y,Procurement,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""procurement_compliance"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Procurement"",
+      ""escalation_reason"": ""Potential breach of sustainability policy by a supplier."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""one of our suppliers may not meet our sustainability policy"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Report that a supplier may breach sustainability policy.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M4,True,1,procurement_compliance,HIGH,Y,Procurement,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""procurement_compliance"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Procurement"",
+      ""escalation_reason"": ""Potential breach of sustainability policy by a supplier requires compliance review."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""one of our suppliers may not meet our sustainability policy"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Supplier may not meet sustainability policy.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M5,True,1,accessibility_barrier,HIGH,Y,Facilities + Accessibility & Inclusion,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""accessibility_barrier"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities + Accessibility & Inclusion"",
+      ""escalation_reason"": ""People with disabilities are being excluded due to a blocked accessible entrance for two days."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""The accessible entrance near the main building has been blocked for two days."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Accessible entrance blocked near main building for two days.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M5,True,1,accessibility_barrier,HIGH,Y,Facilities + Accessibility & Inclusion,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""accessibility_barrier"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities + Accessibility & Inclusion"",
+      ""escalation_reason"": ""People are being excluded due to the accessible entrance being blocked for two days."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""The accessible entrance near the main building has been blocked for two days."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Accessible entrance near main building blocked for two days.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M5,True,1,accessibility_barrier,HIGH,Y,Facilities + Accessibility & Inclusion,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""accessibility_barrier"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities + Accessibility & Inclusion"",
+      ""escalation_reason"": ""People with disabilities are being excluded due to the blocked entrance lasting for two days."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""The accessible entrance near the main building has been blocked for two days."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Accessible entrance near main building blocked for two days.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M6,True,1,safety_hazard,CRITICAL,Y,WHS / Emergency Response,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""safety_hazard"",
+      ""urgency"": ""CRITICAL"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""WHS / Emergency Response"",
+      ""escalation_reason"": ""Chemical smell and leaking drums causing dizziness pose an immediate health and safety risk."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""Strong chemical smell and liquid leaking from drums behind Building D - two people feel dizzy."",
+      ""confidence"": 0.98,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Chemical leak and smell behind Building D causing dizziness in staff.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M6,True,1,safety_hazard,CRITICAL,Y,WHS / Emergency Response,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""safety_hazard"",
+      ""urgency"": ""CRITICAL"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""WHS / Emergency Response"",
+      ""escalation_reason"": ""Chemical smell and leaking drums causing dizziness pose an immediate health and safety risk."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""Strong chemical smell and liquid leaking from drums behind Building D - two people feel dizzy."",
+      ""confidence"": 0.99,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Chemical leak and smell behind Building D causing dizziness.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M6,True,1,safety_hazard,CRITICAL,Y,WHS / Emergency Response,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""safety_hazard"",
+      ""urgency"": ""CRITICAL"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""WHS / Emergency Response"",
+      ""escalation_reason"": ""Immediate risk to health with chemical leak and dizziness reported."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""Strong chemical smell and liquid leaking from drums behind Building D - two people feel dizzy."",
+      ""confidence"": 0.99,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Chemical leak and odor behind Building D causing dizziness.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M7,True,1,general_feedback,LOW,N,Sustainability Communications,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""general_feedback"",
+      ""urgency"": ""LOW"",
+      ""sentiment"": ""POSITIVE"",
+      ""followup_required"": ""N"",
+      ""recommended_team"": ""Sustainability Communications"",
+      ""escalation_reason"": ""General positive feedback with no action needed"",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""Just wanted to say the new solar panels on the library look great, well done team!"",
+      ""confidence"": 1.0,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Praise for the new solar panels on the library.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M7,True,1,general_feedback,LOW,N,Sustainability Communications,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""general_feedback"",
+      ""urgency"": ""LOW"",
+      ""sentiment"": ""POSITIVE"",
+      ""followup_required"": ""N"",
+      ""recommended_team"": ""Sustainability Communications"",
+      ""escalation_reason"": ""General positive feedback with no action needed"",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""Just wanted to say the new solar panels on the library look great, well done team!"",
+      ""confidence"": 1.0,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Praise for the new solar panels on the library.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M7,True,1,general_feedback,LOW,N,Sustainability Communications,NONE,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""general_feedback"",
+      ""urgency"": ""LOW"",
+      ""sentiment"": ""POSITIVE"",
+      ""followup_required"": ""N"",
+      ""recommended_team"": ""Sustainability Communications"",
+      ""escalation_reason"": ""General positive feedback with no action required."",
+      ""data_sensitivity_risk"": ""NONE"",
+      ""evidence"": ""Just wanted to say the new solar panels on the library look great, well done team!"",
+      ""confidence"": 1.0,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Praise for the new library solar panels.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M8,True,1,governance_misconduct,HIGH,Y,Integrity / Whistleblower Line,HIGH,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""governance_misconduct"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Integrity / Whistleblower Line"",
+      ""escalation_reason"": ""Allegation of pressuring staff to falsify ESG audit data."",
+      ""data_sensitivity_risk"": ""HIGH"",
+      ""evidence"": ""My manager John Smith keeps pressuring me to change our emissions numbers before the audit."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Manager pressuring staff to alter emissions numbers before audit.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M8,True,1,governance_misconduct,HIGH,Y,Integrity / Whistleblower Line,HIGH,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""governance_misconduct"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Integrity / Whistleblower Line"",
+      ""escalation_reason"": ""Allegation of manager pressuring staff to falsify ESG audit data"",
+      ""data_sensitivity_risk"": ""HIGH"",
+      ""evidence"": ""My manager John Smith keeps pressuring me to change our emissions numbers before the audit."",
+      ""confidence"": 0.95,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Manager pressuring employee to alter emissions data before audit.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M8,True,1,governance_misconduct,HIGH,Y,Integrity / Whistleblower Line,HIGH,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""governance_misconduct"",
+      ""urgency"": ""HIGH"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Integrity / Whistleblower Line"",
+      ""escalation_reason"": ""Allegation of pressuring staff to falsify emissions numbers before an audit."",
+      ""data_sensitivity_risk"": ""HIGH"",
+      ""evidence"": ""My manager John Smith keeps pressuring me to change our emissions numbers before the audit."",
+      ""confidence"": 0.98,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Manager pressuring employee to alter emissions numbers prior to audit.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M9,True,2,energy_waste,MEDIUM,Y,Facilities - Energy/BMS,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""energy_waste"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Energy/BMS"",
+      ""escalation_reason"": ""Ongoing energy waste requiring investigation."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""Lights are on in Building A every night"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Lights left on in Building A every night.""
+    },
+    {
+      ""issue_category"": ""waste_contamination"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Waste & Recycling"",
+      ""escalation_reason"": ""Overflowing bins require servicing."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""the bins near the cafe are overflowing"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Bins near the cafe are overflowing.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M9,True,2,energy_waste,MEDIUM,Y,Facilities - Energy/BMS,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""energy_waste"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Energy/BMS"",
+      ""escalation_reason"": ""Ongoing energy waste that needs to be addressed."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""Lights are on in Building A every night"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Lights remain on in Building A every night.""
+    },
+    {
+      ""issue_category"": ""waste_contamination"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Waste & Recycling"",
+      ""escalation_reason"": ""Overflowing bins require waste management attention."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""bins near the cafe are overflowing"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Bins near the cafe are overflowing.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M9,True,2,energy_waste,MEDIUM,Y,Facilities - Energy/BMS,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""energy_waste"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Facilities - Energy/BMS"",
+      ""escalation_reason"": ""Ongoing energy waste through lights left on overnight."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""Lights are on in Building A every night"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Lights remain on in Building A every night.""
+    },
+    {
+      ""issue_category"": ""waste_contamination"",
+      ""urgency"": ""MEDIUM"",
+      ""sentiment"": ""NEGATIVE"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""Waste & Recycling"",
+      ""escalation_reason"": ""Overflowing bins require waste management collection."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""bins near the cafe are overflowing"",
+      ""confidence"": 0.95,
+      ""needs_human_review"": false,
+      ""brief_summary"": ""Bins near the cafe are overflowing.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,1,M10,True,1,safety_hazard,CRITICAL,Y,WHS / Emergency Response,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""safety_hazard"",
+      ""urgency"": ""CRITICAL"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""WHS / Emergency Response"",
+      ""escalation_reason"": ""Immediate risk to health and safety due to smoke in the server room."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""There is smoke coming from the server room in Building B."",
+      ""confidence"": 0.99,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Smoke detected coming from the server room in Building B.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,2,M10,True,1,safety_hazard,CRITICAL,Y,WHS / Emergency Response,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""safety_hazard"",
+      ""urgency"": ""CRITICAL"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""WHS / Emergency Response"",
+      ""escalation_reason"": ""Immediate risk to health and safety due to smoke in the server room."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""There is smoke coming from the server room in Building B."",
+      ""confidence"": 0.99,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Smoke detected coming from the server room in Building B.""
+    }
+  ]
+}"
+2026-10-16T09:42:11,gemini-3.5-flash-lite,v2_improved,3,M10,True,1,safety_hazard,CRITICAL,Y,WHS / Emergency Response,LOW,"{
+  ""issues"": [
+    {
+      ""issue_category"": ""safety_hazard"",
+      ""urgency"": ""CRITICAL"",
+      ""sentiment"": ""NEUTRAL"",
+      ""followup_required"": ""Y"",
+      ""recommended_team"": ""WHS / Emergency Response"",
+      ""escalation_reason"": ""Smoke in the server room presents an immediate risk to health and safety."",
+      ""data_sensitivity_risk"": ""LOW"",
+      ""evidence"": ""There is smoke coming from the server room in Building B."",
+      ""confidence"": 0.99,
+      ""needs_human_review"": true,
+      ""brief_summary"": ""Smoke reported coming from the Building B server room.""
+    }
+  ]
+}"

@@ -1,0 +1,74 @@
+While both ASIC’s Regulatory Guide 280 (S1) and the EY Summary Guide (S3) address the statutory modified liability settings introduced under the Corporations Act 2001, the EY guide provides a condensed, high-level overview that contains several key simplifications and omissions compared to ASIC’s detailed regulatory guidance
+.
+1. Key Differences and Simplifications in the EY Guide
+A. Collapsing the Two-Tier Time Horizon (Major Simplification)
+ASIC RG 280 (S1): ASIC clearly distinguishes between two separate protection periods based on the specific type of disclosure
+:
+1-Year Period (Financial years commencing 1 January 2025 to 31 December 2025): Applies to general statements relating to climate that, at the time they are made, are about the future
+.
+3-Year Period (Financial years commencing 1 January 2025 to 31 December 2027): Applies specifically to disclosures regarding Scope 3 greenhouse gas emissions (including financed emissions), scenario analysis, and transition plans, as well as the inputs and assumptions informing them
+.
+EY Guide (S3): EY simplifies this by presenting a single blanket three-year period (1 January 2025 to 31 December 2027) for "the most uncertain parts of a climate statement"
+. It completely omits the narrower one-year limit for general forward-looking climate statements
+.
+B. Definition of "Protected Statements"
+ASIC RG 280 (S1): Sets out exhaustive statutory categories of "protected statements" (Scope 3, scenario analysis, transition plans, and forward-looking statements) in Table 3 and specifies that the protection also covers the underlying inputs and assumptions used to generate them
+.
+EY Guide (S3): Uses generalized shorthand, describing the protection as covering "the most uncertain parts of a climate statement" without enumerating the specific statutory categories in that section
+.
+C. Carve-Outs for ASIC Enforcement and Criminal Proceedings (Critical Legal Nuance)
+ASIC RG 280 (S1): Explicitly clarifies the precise legal perimeter of the shield: modified liability prevents private civil actions (such as class actions or lawsuits by investors alleging misleading or deceptive conduct), but does not exclude criminal actions or regulatory enforcement action brought by ASIC
+. ASIC also maintains its full directions power under section 296E to require entities to substantiate, correct, or amend statements
+.
+EY Guide (S3): Characterizes the setting broadly as a temporary suspension of liability for "misleading and deceptive (and other) conduct" and labels it a "limited immunity"
+. It does not explicitly alert readers that ASIC retains full power to commence civil or enforcement proceedings, or that criminal liability remains entirely unaffected
+.
+D. Protected Statements Disclosed Outside the Sustainability Report
+ASIC RG 280 (S1): Provides detailed guidance on when protected statements remain protected if reproduced outside the sustainability report
+. Protection continues only if required by Commonwealth law (such as continuous disclosure obligations under s674/s675, the Operating and Financial Review under s299A, prospectuses under s710, or Product Disclosure Statements under s1013D/E), provided the statement is identical and not summarized or expanded
+. ASIC explicitly notes that voluntary disclosures (such as investor presentations or marketing material) are not protected
+.
+EY Guide (S3): Omits this entire discussion regarding Commonwealth-mandated disclosures, mentioning only that modified liability does not extend to statements incorporated by cross-reference
+.
+E. Terminology and Deferral to External Guidance
+ASIC RG 280 (S1): Uses formal statutory terms—referencing "modified liability settings", "protected statements", and sections 1707C and 1707D of the Corporations Act
+.
+EY Guide (S3): Adopts colloquial commercial phrasing such as "limited immunity" and delegates the detailed analysis to a separate, external firm publication via footnote ("EY Mandatory climate-related financial disclosures: What you need to know")
+.
+2. Areas of Direct Alignment
+Despite the EY guide’s brevity, both documents align on key principles:
+Exclusion of Cross-Referenced Material: Both S1 and S3 highlight ASIC’s clarification that modified liability does not extend to information included in the sustainability report by cross-reference to other documents
+.
+Modified Directors' Declaration: Both documents explain that for reporting periods between 1 January 2025 and 31 December 2027, directors are only required to provide a modified declaration confirming the entity took "reasonable steps" to ensure compliance
+.
+Underlying Regulatory Rationale: Both recognize that the temporary relief exists to give entities time to build capacity, reporting systems, and governance maturity as reporting practices evolve
+.
+Summary Comparison Table
+Aspect
+ASIC RG 280 (S1)
+EY Summary Guide (S3)
+Duration & Categories
+Tiered: 1 year (2025) for forward-looking statements; 3 years (2025–2027) for Scope 3, scenarios, and transition plans
+.
+Blanket: States a single 3-year timeframe (2025–2027) for "uncertain parts"
+.
+Who is Barred from Suing
+Private third parties only; ASIC civil/regulatory actions and all criminal actions are expressly retained
+.
+Described generally as "limited immunity" suspending liability; does not mention ASIC's retained powers
+.
+Commonwealth Law Disclosures
+Protected if mandatory under Commonwealth law (continuous disclosure, OFR, PDS, prospectus) and identical
+.
+Not mentioned.
+Cross-Referenced Documents
+Excluded from modified liability
+.
+Excluded from modified liability
+.
+Directors' Declaration
+Requires "reasonable steps" declaration for 2025–2027 financial years
+.
+Requires "reasonable steps" declaration for 2025–2027 financial years
+.
+Would you like to examine how ASIC plans to exercise its section 296E directions power during this transition period, or look into the specific rules for cross-referencing information from an Operating and Financial Review (OFR)?

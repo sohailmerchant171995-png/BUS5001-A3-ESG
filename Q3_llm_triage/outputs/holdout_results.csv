@@ -1,0 +1,11 @@
+id,message,gold_category,rule,zero_shot,llm_v2
+H1,The toilets on level 2 keep running non-stop and the floor is wet.,water_leak,general_feedback,energy_waste,water_leak
+H2,Projectors in every lecture theatre are left switched on over the weekend.,energy_waste,general_feedback,procurement_compliance,energy_waste
+H3,Someone threw food scraps in the paper-only recycling again.,waste_contamination,waste_contamination,waste_contamination,waste_contamination
+H4,There is a burning smell from the kitchen switchboard.,safety_hazard,general_feedback,energy_waste,safety_hazard
+H5,"The wheelchair ramp is fine now, thanks for fixing it so fast!",general_feedback,accessibility_barrier,general_feedback,general_feedback
+H6,A contractor we hired seems to be dumping offcuts illegally.,procurement_compliance,general_feedback,procurement_compliance,procurement_compliance
+H7,Our ESG report double-counts the solar offsets and nobody wants to fix it.,governance_misconduct,general_feedback,procurement_compliance,governance_misconduct
+H8,Water is pooling under the sink in the Building D kitchen.,water_leak,water_leak,water_leak,water_leak
+H9,The stairlift to the library mezzanine has been out of order since Monday.,accessibility_barrier,accessibility_barrier,accessibility_barrier,accessibility_barrier
+H10,Great job on cutting energy use this quarter.,general_feedback,energy_waste,general_feedback,general_feedback

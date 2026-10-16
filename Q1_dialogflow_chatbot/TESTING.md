@@ -68,3 +68,10 @@ Data-quality issues found (Fix 5):
 - Two location synonyms had stray tab characters ("\tbuilding c", "\tmain building"). Clean them up.
 Lesson: inspecting the exported configuration as code catches errors the UI hides (a governance and QA point).
 Fix 5 result (final export, 16:50): all synonyms are on the correct values; automated check found no duplicate synonyms across values. Re-audit also caught a fix-induced slip ("energy waste" first added to hazardous_spill, plus an accidental "same line" chip); both corrected. Two cosmetic leading-tab synonyms remain (harmless).
+
+## Finding F6 (16 Oct 2026, pre-video dry run)
+Input: "There is a water leak in Building C that has been running all morning, it's slippery"
+Result: risk_level = "ongoing" (matched "all morning") -> Confirm Report, NOT Urgent Escalation.
+Cause: the message contains cues for two risk values; the single-valued risk_level parameter keeps the first match.
+Implication: a mixed message can under-triage a safety risk. Mitigation for production: make risk_level a list parameter and route to Urgent if the list contains "high" (safety cue overrides), or ask a direct safety question whenever "ongoing" is detected.
+Video uses: "There is a water leak in Building C and the floor is slippery".
