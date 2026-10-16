@@ -1,0 +1,150 @@
+{
+  "name": "e2100b50-c8d1-4e5d-a2c7-5bfc2a63daf1",
+  "displayName": "Collect Details",
+  "form": {
+    "parameters": [ {
+      "displayName": "issue_type",
+      "required": true,
+      "entityType": "@issue_type",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What kind of issue is it? For example: a water leak, energy waste, waste or recycling, a spill, or an accessibility barrier." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, I didn't catch that. Is it water, energy, waste, a spill, or accessibility?" ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "b82ccfcc-1b40-4313-aed9-174b20a192ff"
+        }, {
+          "targetPage": "Human Handoff",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm having trouble understanding, so let me connect you with a person." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "6234367b-d839-44db-ac8f-6b78d76737f3"
+        } ]
+      },
+      "description": "The type of sustainability issue being reported"
+    }, {
+      "displayName": "campus_location",
+      "required": true,
+      "entityType": "@campus_location",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Where is it? For example: Building C, the Library, or the Car Park." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, which building or area? For example Building A, Library, Cafeteria or Car Park." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "59089484-0c9c-4c26-94cd-7496909d9967"
+        }, {
+          "targetPage": "Human Handoff",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm having trouble understanding, so let me connect you with a person." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "1fc80e5c-f52e-4c86-b33b-3a4d3b287d12"
+        } ]
+      },
+      "description": "Building or area where the issue is"
+    }, {
+      "displayName": "risk_level",
+      "required": true,
+      "entityType": "@risk_level",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Is anyone at risk, or is it still happening right now? You can say yes it is unsafe, still happening, or no it is minor." ]
+            },
+            "languageCode": "en"
+          } ]
+        },
+        "repromptEventHandlers": [ {
+          "event": "sys.no-match-1",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "Sorry, is anyone at risk? Please say yes, still happening, or no." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "20912c80-5d3c-46b6-9a56-b2e73e8575a3"
+        }, {
+          "targetPage": "Human Handoff",
+          "event": "sys.no-match-2",
+          "triggerFulfillment": {
+            "messages": [ {
+              "text": {
+                "text": [ "I'm having trouble understanding, so let me connect you with a person." ]
+              },
+              "languageCode": "en"
+            } ]
+          },
+          "name": "f49da86b-c34a-4d16-9857-77d8e147059d"
+        } ]
+      },
+      "description": "Whether anyone is at risk or the issue is ongoing"
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "I can log that for you. I just need a few quick details." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = \"FINAL\" AND $session.params.risk_level = \"high\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Urgent Escalation",
+    "name": "8dc3460b-cd3c-4906-a1e4-4990f7988491",
+    "description": "Urgent path when the form is complete and someone may be at risk"
+  }, {
+    "condition": "$page.params.status = \"FINAL\"",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirm Report",
+    "name": "b39165ca-4f05-43d1-8fd0-ba635a8655a3",
+    "description": "Normal path when the form is complete"
+  } ],
+  "description": "Collects issue type, location and risk level through a form"
+}

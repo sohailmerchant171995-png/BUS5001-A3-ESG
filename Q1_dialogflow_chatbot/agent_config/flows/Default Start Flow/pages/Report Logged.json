@@ -1,0 +1,52 @@
+{
+  "name": "f067aa2e-c5a6-40bb-a7a2-a9453a796a41",
+  "displayName": "Report Logged",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Done. Your report reference is ESG-2026-0147. The Facilities and Sustainability team will review it within 1 business day, and you can type \"check my report\" at any time. Is there anything else I can help with?" ]
+      },
+      "languageCode": "en"
+    } ],
+    "setParameterActions": [ {
+      "parameter": "issue_type",
+      "value": null
+    }, {
+      "parameter": "campus_location",
+      "value": null
+    }, {
+      "parameter": "risk_level",
+      "value": null
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for helping us run a more sustainable workplace. Goodbye." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "d1d8ae1e-f900-43f5-b6e4-7dfc930065ef",
+    "description": "User has nothing else, end the chat"
+  }, {
+    "intent": "confirm_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure. I can help you report another issue, check a report, or connect you with a person. What would you like to do" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "2981dd1a-1ed3-4c0e-ae3e-d3b26ddb62cf",
+    "description": "User wants more help"
+  } ],
+  "description": "Confirms submission with a reference number and offers further help"
+}

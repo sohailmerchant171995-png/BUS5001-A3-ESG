@@ -1,0 +1,12 @@
+{
+  "excludedPhrases": [ {
+    "value": "blocked",
+    "languageCode": "en"
+  }, {
+    "value": "broken",
+    "languageCode": "en"
+  }, {
+    "value": "block",
+    "languageCode": "en"
+  } ]
+}

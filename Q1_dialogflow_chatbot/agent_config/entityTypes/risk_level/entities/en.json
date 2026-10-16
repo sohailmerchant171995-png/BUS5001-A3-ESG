@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "high",
+    "synonyms": [ "dangerous", "emergency", "high", "injured", "people at risk", "slippery", "someone could slip", "unsafe", "yes", "could get hurt" ],
+    "languageCode": "en"
+  }, {
+    "value": "ongoing",
+    "synonyms": [ "all morning", "all night", "it’s continuing", "not stopped", "ongoing", "still happening", "still leaking", "still running" ],
+    "languageCode": "en"
+  }, {
+    "value": "low",
+    "synonyms": [ "it’s fine", "just letting you know", "low", "minor", "no", "not urgent", "small", "stopped" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "222ac268-38c1-44a1-9ec1-7aff6a534ef5",
+  "displayName": "talk_to_human",
+  "priority": 500000,
+  "description": "User wants to speak to a person instead of the bot",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 10
+}

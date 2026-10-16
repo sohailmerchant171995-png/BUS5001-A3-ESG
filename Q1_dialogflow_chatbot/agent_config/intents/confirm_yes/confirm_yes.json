@@ -1,0 +1,8 @@
+{
+  "name": "67b3cfd5-9bb7-4970-bb62-cf4f028e7def",
+  "displayName": "confirm_yes",
+  "priority": 500000,
+  "description": "User agrees or confirms",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 10
+}

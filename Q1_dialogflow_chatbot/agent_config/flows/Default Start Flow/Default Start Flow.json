@@ -1,0 +1,82 @@
+{
+  "name": "00000000-0000-0000-0000-000000000000",
+  "displayName": "Default Start Flow",
+  "description": "A start flow created along with the agent",
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Hi, I'm GreenDesk, the ESG and Sustainability assistant. I can help you report issues such as water leaks, energy waste, waste contamination or blocked accessible entrances, check on a report, or connect you with a person. Please don't share personal or health information here, and you can stay anonymous. What would you like to do?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f4f67a50-7e27-4781-a5b1-1ccfe2f880f8",
+    "description": "Greets the user, explains scope and gives the privacy notice"
+  }, {
+    "intent": "report_issue",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Collect Details",
+    "name": "290256fd-3f6a-404c-b0f5-838d37c8e3f4"
+  }, {
+    "intent": "check_status",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Check Status",
+    "name": "4b63167b-4dc8-4b5d-9b51-622b7e9ace05",
+    "description": "Shows the status of an existing report"
+  }, {
+    "intent": "talk_to_human",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Human Handoff",
+    "name": "9cdc4825-eb16-4472-a126-f5c4e1fe3033",
+    "description": "Lets the user reach a person at any point"
+  }, {
+    "intent": "sensitive_report",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confidential Referral",
+    "name": "466123ff-abef-425e-9401-5c2deb5c6554",
+    "description": "Redirects personal or conduct matters safely"
+  } ],
+  "eventHandlers": [ {
+    "event": "sys.no-match-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sorry, I didn't quite get that. I can help you report a sustainability or facilities issue, check a report, or connect you with a person. What would you like to do?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "e6c0320c-a87c-45fb-82b6-da321225ced4"
+  }, {
+    "event": "sys.no-input-default",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "I didn't get that. Can you say it again?", "I missed what you said. What was that?", "Sorry, could you say that again?", "Sorry, can you say that again?", "Can you say that again?", "Sorry, I didn't get that. Can you rephrase?", "Sorry, what was that?", "One more time?", "What was that?", "Say that one more time?", "I didn't get that. Can you repeat?", "I missed that, say that again?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "5ee115d8-8ba3-4d6f-8246-e013243897a2"
+  } ],
+  "nluSettings": {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001
+  },
+  "nluSettingsList": [ {
+    "modelType": "MODEL_TYPE_ADVANCED",
+    "classificationThreshold": 0.30000001,
+    "customConfigKey": "e565459a-671f-4960-80ba-d496a7acdb71",
+    "languageCode": "en"
+  } ]
+}

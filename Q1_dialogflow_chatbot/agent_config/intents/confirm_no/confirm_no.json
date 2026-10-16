@@ -1,0 +1,8 @@
+{
+  "name": "963a547a-d63e-458b-9882-cbb48de40e79",
+  "displayName": "confirm_no",
+  "priority": 500000,
+  "description": "User declines or says no",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 10
+}

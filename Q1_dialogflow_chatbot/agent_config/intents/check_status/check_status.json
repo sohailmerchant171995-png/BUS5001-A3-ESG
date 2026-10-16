@@ -1,0 +1,8 @@
+{
+  "name": "c4f3ad69-aadc-4de5-aec0-76c94d4caced",
+  "displayName": "check_status",
+  "priority": 500000,
+  "description": "User wants to know the progress of a report they made",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 10
+}

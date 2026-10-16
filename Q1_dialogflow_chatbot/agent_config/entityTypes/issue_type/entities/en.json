@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "water_leak",
+    "synonyms": [ "burst pipe", "dripping tap", "flooding", "leak", "leaking", "leaking tap", "running water", "water leak", "water_leak" ],
+    "languageCode": "en"
+  }, {
+    "value": "energy_waste",
+    "synonyms": [ "AC running", "air conditioning", "air conditioning on", "aircon", "computers left on", "energy waste", "energy_waste", "heater on", "lights left on", "lights on", "power waste" ],
+    "languageCode": "en"
+  }, {
+    "value": "waste_contamination",
+    "synonyms": [ "contaminated bins", "litter", "overflowing bin", "recycling bins", "recycling contaminated", "rubbish", "waste problem", "waste_contamination", "wrong bin" ],
+    "languageCode": "en"
+  }, {
+    "value": "hazardous_spill",
+    "synonyms": [ "batteries dumped", "chemical smell", "chemical spill", "dumped batteries", "hazardous waste", "oil spill", "paint spill", "spill" ],
+    "languageCode": "en"
+  }, {
+    "value": "accessibility_barrier",
+    "synonyms": [ "accessibility issue", "accessibility_barrier", "accessible entrance", "accessible entrance blocked", "door too heavy", "elevator not working", "lift broken", "ramp blocked", "wheelchair access" ],
+    "languageCode": "en"
+  } ]
+}

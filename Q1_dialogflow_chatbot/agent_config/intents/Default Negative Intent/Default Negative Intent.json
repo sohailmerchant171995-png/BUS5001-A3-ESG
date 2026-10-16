@@ -1,0 +1,9 @@
+{
+  "name": "00000000-0000-0000-0000-000000000001",
+  "displayName": "Default Negative Intent",
+  "priority": 500000,
+  "isFallback": true,
+  "description": "Out of scope requests that GreenDesk should not handle so the agent falls back gracefully",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 10
+}

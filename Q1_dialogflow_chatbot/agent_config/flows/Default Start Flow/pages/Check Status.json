@@ -1,0 +1,42 @@
+{
+  "name": "2af7dde3-0c07-496b-b81b-8998509bc508",
+  "displayName": "Check Status",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Report ESG-2026-0147 (water leak, Building C) is IN PROGRESS. A plumber has been assigned and the next update is due today. Is there anything else I can help with?" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Thanks for helping us run a more sustainable workplace. Goodbye." ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "targetPage": "End Session",
+    "name": "73cbc128-ccad-4cea-a439-a8f836cfda1a",
+    "description": "User has nothing else, end the chat"
+  }, {
+    "intent": "confirm_yes",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "Sure. I can help you report another issue, check a report, or connect you with a person. What would you like to do?" ]
+        },
+        "languageCode": "en"
+      } ]
+    },
+    "name": "f81fd32a-a274-4d25-89a6-b3c9979df363",
+    "description": "User wants more help"
+  } ],
+  "description": "Shows the progress of an existing report"
+}

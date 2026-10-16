@@ -1,0 +1,32 @@
+{
+  "name": "dca99d88-5698-4369-927e-de3651d75fb4",
+  "displayName": "Human Handoff",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "No problem, I will connect you with a person. You can reach the Facilities and Sustainability Desk on 1800 000 001 (Monday to Friday, 8am to 6pm) or email sustainability@example.org. Anything you have already told me will be passed on, so you will not need to repeat it." ]
+      },
+      "languageCode": "en"
+    }, {
+      "liveAgentHandoff": {
+        "metadata": {
+        
+        }
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "63bea55e-408e-4571-be9d-c520bb80cb1f",
+    "description": "Close the chat after giving contact details"
+  } ],
+  "description": "Passes the user to a person with contact details"
+}

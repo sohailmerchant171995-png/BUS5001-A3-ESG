@@ -1,0 +1,21 @@
+{
+  "name": "abe94217-2c42-4b98-9c01-c6381e4dfbed",
+  "displayName": "report_issue",
+  "parameters": [ {
+    "id": "issue_type",
+    "entityType": "@issue_type"
+  }, {
+    "id": "campus_location",
+    "entityType": "@campus_location"
+  }, {
+    "id": "risk_level",
+    "entityType": "@risk_level"
+  } ],
+  "priority": 500000,
+  "labels": [ {
+    "key": "sys-head",
+    "value": "sys-head"
+  } ],
+  "description": "User wants to report a sustainability or facilities issue",
+  "numTrainingPhrases": 20
+}

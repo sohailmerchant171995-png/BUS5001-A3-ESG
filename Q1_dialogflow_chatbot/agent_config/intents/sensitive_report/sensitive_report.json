@@ -1,0 +1,8 @@
+{
+  "name": "1b60c7a3-53a0-433e-b598-294169096efe",
+  "displayName": "sensitive_report",
+  "priority": 500000,
+  "description": "Personal conduct wellbeing or misconduct matters that must go to a confidential channel",
+  "skipAutoAnnotation": true,
+  "numTrainingPhrases": 10
+}

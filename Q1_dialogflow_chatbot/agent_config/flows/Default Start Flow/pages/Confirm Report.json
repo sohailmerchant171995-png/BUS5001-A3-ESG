@@ -1,0 +1,48 @@
+{
+  "name": "08c9f18a-3c0a-47a3-bd97-64c62ba2d7d8",
+  "displayName": "Confirm Report",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thanks. Here is what I have. Issue: $session.params.issue_type. Location: $session.params.campus_location. Risk: $session.params.risk_level. Shall I send this to the Facilities and Sustainability team? Please answer yes or no." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "confirm_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Report Logged",
+    "name": "5efb54dc-4d0d-46fc-b1db-08aaa8c9ea58",
+    "description": "User confirms the details"
+  }, {
+    "intent": "confirm_no",
+    "triggerFulfillment": {
+      "messages": [ {
+        "text": {
+          "text": [ "No problem, let's correct it." ]
+        },
+        "languageCode": "en"
+      } ],
+      "setParameterActions": [ {
+        "parameter": "issue_type",
+        "value": null
+      }, {
+        "parameter": "campus_location",
+        "value": null
+      }, {
+        "parameter": "risk_level",
+        "value": null
+      } ]
+    },
+    "targetPage": "Collect Details",
+    "name": "617503ac-3ef2-4e67-ad58-0f18d3347fce",
+    "description": "User wants to correct the details"
+  } ],
+  "description": "Repeats the captured details back to the user and asks for confirmation before submitting"
+}

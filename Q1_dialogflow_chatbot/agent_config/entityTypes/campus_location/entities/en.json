@@ -1,0 +1,35 @@
+{
+  "entities": [ {
+    "value": "Building A",
+    "synonyms": [ "bldg a", "building a", "Building A" ],
+    "languageCode": "en"
+  }, {
+    "value": "Building B",
+    "synonyms": [ "bldg b", "building b", "Building B" ],
+    "languageCode": "en"
+  }, {
+    "value": "Building C",
+    "synonyms": [ "\tbuilding c", "bldg c", "Building C" ],
+    "languageCode": "en"
+  }, {
+    "value": "Building D",
+    "synonyms": [ "bldg d", "building d", "Building D" ],
+    "languageCode": "en"
+  }, {
+    "value": "Main Building",
+    "synonyms": [ "\tmain building", "Main Building", "main entrance" ],
+    "languageCode": "en"
+  }, {
+    "value": "Library",
+    "synonyms": [ "library", "Library", "the library" ],
+    "languageCode": "en"
+  }, {
+    "value": "Car Park",
+    "synonyms": [ "car park", "Car Park", "carpark", "parking", "parking lot" ],
+    "languageCode": "en"
+  }, {
+    "value": "Cafeteria",
+    "synonyms": [ "cafe", "cafeteria", "Cafeteria", "canteen", "food court" ],
+    "languageCode": "en"
+  } ]
+}

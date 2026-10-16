@@ -1,0 +1,277 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Oil spill",
+      "parameterId": "issue_type"
+    }, {
+      "text": " in the "
+    }, {
+      "text": "Car Park",
+      "parameterId": "campus_location"
+    }, {
+      "text": " and someone "
+    }, {
+      "text": "could get hurt",
+      "parameterId": "risk_level"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Water is "
+    }, {
+      "text": "still leaking",
+      "parameterId": "risk_level"
+    }, {
+      "text": " in the "
+    }, {
+      "text": "Library",
+      "parameterId": "campus_location"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The "
+    }, {
+      "text": "lift is broken",
+      "parameterId": "issue_type"
+    }, {
+      "text": " in "
+    }, {
+      "text": "Building D",
+      "parameterId": "campus_location"
+    }, {
+      "text": " and it is "
+    }, {
+      "text": "unsafe",
+      "parameterId": "risk_level"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There is a "
+    }, {
+      "text": "chemical spill",
+      "parameterId": "issue_type"
+    }, {
+      "text": " in "
+    }, {
+      "text": "Building B",
+      "parameterId": "campus_location"
+    }, {
+      "text": " and it is "
+    }, {
+      "text": "dangerous",
+      "parameterId": "risk_level"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There is a "
+    }, {
+      "text": "water leak",
+      "parameterId": "issue_type"
+    }, {
+      "text": " in "
+    }, {
+      "text": "Building C",
+      "parameterId": "campus_location"
+    }, {
+      "text": " and it is "
+    }, {
+      "text": "slippery",
+      "parameterId": "risk_level"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I'd like to log a sustainability problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "report a problem"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The "
+    }, {
+      "text": "recycling bins",
+      "parameterId": "issue_type"
+    }, {
+      "text": " are contaminated again"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Someone "
+    }, {
+      "text": "dumped batteries",
+      "parameterId": "issue_type"
+    }, {
+      "text": " near the "
+    }, {
+      "text": "Car Park",
+      "parameterId": "campus_location"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "lift is broken",
+      "parameterId": "issue_type"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The "
+    }, {
+      "text": "accessible entrance",
+      "parameterId": "issue_type"
+    }, {
+      "text": " is blocked"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The ",
+      "auto": true
+    }, {
+      "text": "heater",
+      "parameterId": "issue_type",
+      "auto": true
+    }, {
+      "text": " is on in an empty room",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I need to report a ",
+      "auto": true
+    }, {
+      "text": "leaking tap",
+      "parameterId": "issue_type",
+      "auto": true
+    }, {
+      "text": " in the ",
+      "auto": true
+    }, {
+      "text": "Cafeteria",
+      "parameterId": "campus_location",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "something is wasting ",
+      "auto": true
+    }, {
+      "text": "water",
+      "parameterId": "issue_type",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "there's a "
+    }, {
+      "text": "chemical spill",
+      "parameterId": "issue_type",
+      "auto": true
+    }, {
+      "text": " in "
+    }, {
+      "text": "Building B",
+      "parameterId": "campus_location",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "report ",
+      "auto": true
+    }, {
+      "text": "energy waste",
+      "parameterId": "issue_type",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Lights",
+      "parameterId": "issue_type",
+      "auto": true
+    }, {
+      "text": " have been on ",
+      "auto": true
+    }, {
+      "text": "all night",
+      "parameterId": "risk_level",
+      "auto": true
+    }, {
+      "text": " in ",
+      "auto": true
+    }, {
+      "text": "the Library",
+      "parameterId": "campus_location",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "The ",
+      "auto": true
+    }, {
+      "text": "air conditioning",
+      "parameterId": "issue_type",
+      "auto": true
+    }, {
+      "text": " is running overnight in an empty office",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "I want to report an issue",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "There is a ",
+      "auto": true
+    }, {
+      "text": "water leak",
+      "parameterId": "issue_type",
+      "auto": true
+    }, {
+      "text": " in ",
+      "auto": true
+    }, {
+      "text": "Building C",
+      "parameterId": "campus_location",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

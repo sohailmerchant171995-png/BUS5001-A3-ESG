@@ -1,0 +1,25 @@
+{
+  "name": "841db551-745b-4bc5-a734-4d5d591a0ada",
+  "displayName": "Urgent Escalation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "This sounds urgent. If anyone is in danger, call Campus Security now on 1800 000 000. I am flagging your report as PRIORITY for the on-call Facilities team, who aim to respond within 1 hour." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Report Logged",
+    "name": "7ebc3358-6649-4644-8465-be0ab626dda4",
+    "description": "After the safety warning, log the report"
+  } ],
+  "description": "Safety warning and priority flag when someone may be at risk"
+}

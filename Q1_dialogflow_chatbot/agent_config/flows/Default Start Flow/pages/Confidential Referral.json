@@ -1,0 +1,25 @@
+{
+  "name": "bdd0efc8-4aee-4f8a-8cd0-5e36beb97402",
+  "displayName": "Confidential Referral",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you for trusting me with this. I am not the right channel for personal or conduct matters, so I will not record any details. Please contact the confidential Integrity Line on 1800 000 002, or the free Employee Assistance Program on 1800 000 003, available 24/7. If you are in immediate danger, call 000." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "true",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "End Session",
+    "name": "dd35810b-9444-4cf9-8473-1647ea71e54d",
+    "description": "Close the chat without recording any details"
+  } ],
+  "description": "Redirects personal or conduct matters to confidential channels without recording details"
+}
